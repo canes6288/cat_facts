@@ -8,7 +8,12 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <!-- This name needs to align with the Angular module definition -->
+  <!-- Found in: app/assets/javascripts/main.js -->
+  <body ng-app="catFacts">
     <%= yield %>
+
+    <!-- Hello World equivalent in Angular -->
+    {{ 1 + 1 }} is 2 because of Angular
   </body>
 </html>
